@@ -1,0 +1,9 @@
+(library
+ (name arytmetyka)
+ (modules arytmetyka)
+ (libraries))
+
+(test
+ (name arytmetyka_test)
+ (modules arytmetyka_test)
+ (libraries ounit2 arytmetyka))
