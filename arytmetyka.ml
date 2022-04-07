@@ -89,7 +89,8 @@ module Set = struct
            wartość f wszystkie liczby pomiędzy f(a,c) i f(a,d), pomiędzy f(a,c)
            i f(b,c), pomiędzy f(a,d) i f(b,d) oraz pomiędzy f(b,c) i f(b,d).
            Więc zbiór wartości f(x,y) dla a ≤ x ≤ b ∧ c ≤ y ≤ d jest
-           przedziałem, nawet dla dzielenia, z końcami wśród f(a,c), f(a,d), f(a,c), f(b,c).*)
+           przedziałem, nawet dla dzielenia, z końcami wśród f(a,c), f(a,d),
+           f(a,c), f(b,c).*)
         map_cartesian_product f [ a; b ] [ c; d ]
         |> List.filter (fun x -> not (Float.is_nan x))
         (* bierzemy min. i maks. wartość, czyli końce wynikowego przedziału;
